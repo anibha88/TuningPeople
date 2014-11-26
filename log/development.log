@@ -8,3 +8,186 @@ Migrating to CreateUsers (20141126064239)
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141126064239"]]
   [1m[35m (148.0ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 12:43:30 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 43ms
+
+ArgumentError (The provided regular expression is using multiline anchors (^ or $), which may present a security risk. Did you mean to use \A and \z, or forgot to add the :multiline => true option?):
+  app/models/user.rb:14:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 12:45:12 +0530
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 6ms
+
+ArgumentError (The provided regular expression is using multiline anchors (^ or $), which may present a security risk. Did you mean to use \A and \z, or forgot to add the :multiline => true option?):
+  app/models/user.rb:14:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 12:48:07 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 823ms (Views: 817.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 12:48:08 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:08 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:08 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 12:48:08 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:08 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:08 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 12:48:42 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 12:48:42 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 12:48:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:42 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 12:48:42 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 12:49:13 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 12:49:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 12:49:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 12:49:13 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 12:49:13 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 12:49:13 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 12:49:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 12:49:13 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 12:55:54 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 73ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 12:55:54 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 12:55:54 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 12:55:54 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 12:55:54 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 12:55:54 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 12:55:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 12:55:54 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-26 12:59:48 +0530
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 12:59:48 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 12:59:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 12:59:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 12:59:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 12:59:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 12:59:48 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 12:59:48 +0530
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-26 14:09:39 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVkpzPyv3PjlSzhvfny8A/unY2QQLWAMG9iVKZVQllM=", "user"=>{"email"=>"anibha88@gmail.com", "username"=>"Nithin", "name"=>"Nithin ", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Completed 500 Internal Server Error in 2ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/nithin/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
